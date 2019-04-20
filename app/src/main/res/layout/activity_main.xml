@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    ></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+                  android:layout_height="wrap_content">
+
+        <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:id="@+id/btnBottom"
+                android:layout_height="wrap_content"
+                android:text="Slide Botton"
+        />
+
+        <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:id="@+id/btnFallDown"
+                android:layout_height="wrap_content"
+                android:text="Fall Down"
+        />
+        <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:id="@+id/btnRight"
+                android:layout_height="wrap_content"
+                android:text="Slide Right"
+        />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
